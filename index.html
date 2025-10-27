@@ -1,0 +1,257 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>ANTRAL MUN - The First Hour</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@300;400;600;700;800;900&family=Poppins:wght@300;400;600;700;800&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+
+    <!-- Navigation -->
+    <nav class="navbar">
+        <div class="nav-container">
+            <div class="logo">
+                <svg class="logo-svg" viewBox="0 0 100 120">
+                    <path d="M30 20 L30 35 L50 50 L70 35 L70 20 L30 20" fill="#d387a4"/>
+                    <path d="M50 50 L30 65 L30 80 L70 80 L70 65 L50 50" fill="#d387a4"/>
+                    <circle cx="50" cy="50" r="35" fill="none" stroke="#d387a4" stroke-width="2"/>
+                </svg>
+                <span class="logo-text">ANTRAL</span>
+            </div>
+            <ul class="nav-menu">
+                <li><a href="index.html" class="active">Home</a></li>
+                <li><a href="about.html">About</a></li>
+                <li><a href="matrix.html">Committees</a></li>
+                <li><a href="team.html">Core Team</a></li>
+                <li><a href="registration.html" class="nav-register-btn">Register</a></li>
+                <li><a href="contact.html">Contact</a></li>
+            </ul>
+            <div class="hamburger">
+                <span></span>
+                <span></span>
+                <span></span>
+            </div>
+        </div>
+    </nav>
+
+    <!-- Progress Bar -->
+    <div class="progress-bar"></div>
+
+    <!-- Hero Section -->
+    <section class="hero home-hero">
+        <div class="hero-background">
+            <!-- Top-left logo -->
+            <div class="top-left-logo">
+                <svg viewBox="0 0 100 120" width="80" height="96">
+                    <!-- Hourglass -->
+                    <path d="M35 25 L35 40 L50 50 L65 40 L65 25 L35 25" fill="#d387a4" opacity="0.9"/>
+                    <path d="M50 50 L35 60 L35 75 L65 75 L65 60 L50 50" fill="#d387a4" opacity="0.9"/>
+                    <!-- Wreath -->
+                    <path d="M50 15 Q45 15 42 18 Q40 20 40 23 Q40 26 42 28 Q45 31 50 31 Q55 31 58 28 Q60 26 60 23 Q60 20 58 18 Q55 15 50 15" stroke="#d387a4" stroke-width="2" fill="none"/>
+                    <path d="M50 31 Q45 31 42 34 Q40 37 40 40 Q40 44 42 47 Q45 50 50 50 Q55 50 58 47 Q60 44 60 40 Q60 37 58 34 Q55 31 50 31" stroke="#d387a4" stroke-width="2" fill="none"/>
+                </svg>
+            </div>
+            
+            <!-- Central hourglass with wreath (blurred) -->
+            <div class="central-hourglass">
+                <svg viewBox="0 0 200 240" width="400" height="480">
+                    <!-- Wreath -->
+                    <circle cx="100" cy="120" r="90" fill="none" stroke="#d387a4" stroke-width="3" opacity="0.6"/>
+                    <circle cx="100" cy="120" r="80" fill="none" stroke="#d387a4" stroke-width="2" opacity="0.4"/>
+                    <!-- Hourglass -->
+                    <path d="M60 40 L60 70 L100 100 L140 70 L140 40 L60 40" fill="#d387a4" opacity="0.3"/>
+                    <path d="M100 100 L60 130 L60 160 L140 160 L140 130 L100 100" fill="#d387a4" opacity="0.3"/>
+                </svg>
+            </div>
+            
+            <!-- Hands -->
+            <div class="hands-container">
+                <div class="hand-element hand-bottom-left">
+                    <svg viewBox="0 0 300 400" width="250" height="330">
+                        <path d="M150 50 Q120 80 100 120 Q80 160 90 200 Q90 240 120 280 Q150 320 180 340 Q200 350 220 330" 
+                              fill="rgba(10, 0, 2, 0.5)" stroke="#d387a4" stroke-width="2" opacity="0.6"/>
+                    </svg>
+                </div>
+                <div class="hand-element hand-top-right">
+                    <svg viewBox="0 0 300 400" width="250" height="330">
+                        <path d="M150 350 Q180 320 200 280 Q220 240 210 200 Q210 160 180 120 Q150 80 120 60 Q100 50 80 70" 
+                              fill="rgba(10, 0, 2, 0.5)" stroke="#d387a4" stroke-width="2" opacity="0.6"/>
+                    </svg>
+                </div>
+            </div>
+        </div>
+        
+        <div class="hero-content">
+            <h2 class="hero-small-text">THE</h2>
+            <h1 class="hero-title-main glitch" data-text="ANTRAL">ANTRAL</h1>
+            <p class="hero-subtitle">MODEL UNITED NATIONS</p>
+            <button class="cta-button" onclick="window.location.href='registration.html'">
+                <span>REGISTER NOW</span>
+            </button>
+            <div class="countdown">
+                <div class="countdown-item">
+                    <span class="countdown-number" id="days">00</span>
+                    <span class="countdown-label">Days</span>
+                </div>
+                <div class="countdown-item">
+                    <span class="countdown-number" id="hours">00</span>
+                    <span class="countdown-label">Hours</span>
+                </div>
+                <div class="countdown-item">
+                    <span class="countdown-number" id="minutes">00</span>
+                    <span class="countdown-label">Minutes</span>
+                </div>
+            </div>
+        </div>
+        <div class="scroll-indicator">
+            <div class="mouse">
+                <span></span>
+            </div>
+        </div>
+    </section>
+
+    <!-- About Section -->
+    <section class="about-section">
+        <div class="container">
+            <h2 class="section-title">About ANTRAL MUN</h2>
+            <div class="about-content">
+                <p class="about-text">
+                    Welcome to <strong>ANTRAL MUN - The First Hour</strong>, where diplomacy meets determination. 
+                    As one of the premier Model United Nations conferences, we bring together passionate delegates 
+                    from across the globe to debate, discuss, and deliberate on pressing international issues.
+                </p>
+                <p class="about-text">
+                    Our conference challenges delegates to step into the shoes of world leaders, diplomats, and policymakers, 
+                    fostering critical thinking, public speaking, and negotiation skills. With diverse committees including 
+                    UNHRC, UNGA, AIPPM, and LOK SABHA, every participant finds their voice in the pursuit of global solutions.
+                </p>
+                <div class="about-features">
+                    <div class="feature-card">
+                        <div class="feature-icon">🌍</div>
+                        <h3>Global Perspective</h3>
+                        <p>Experience diplomacy on an international scale</p>
+                    </div>
+                    <div class="feature-card">
+                        <div class="feature-icon">🎓</div>
+                        <h3>Skill Development</h3>
+                        <p>Enhance your debating and negotiation abilities</p>
+                    </div>
+                    <div class="feature-card">
+                        <div class="feature-icon">🤝</div>
+                        <h3>Networking</h3>
+                        <p>Connect with delegates and build lasting relationships</p>
+                    </div>
+                    <div class="feature-card">
+                        <div class="feature-icon">🏆</div>
+                        <h3>Awards & Recognition</h3>
+                        <p>Compete for excellence and stand out</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Team Preview Section -->
+    <section class="team-preview">
+        <div class="container">
+            <h2 class="section-title">Core Team</h2>
+            <!-- Wrapper for Core Team Section -->
+            <div class="wrapper">
+                <div class="inner">
+                    <div class="team-grid">
+                        <div class="team-card">
+                            <div class="team-card-inner">
+                                <div class="team-card-front">
+                                    <div class="team-image" style="background-image: url('ASSETS/team members/yashveer.png');"></div>
+                                    <h3 class="team-name">Yashveer Ohri</h3>
+                                </div>
+                                <div class="team-card-back">
+                                    <h3>FOUNDER PRESIDENT</h3>
+                                    <a href="https://www.instagram.com/theantraalmun/" target="_blank">
+                                        <button class="instagram-btn">View Profile</button>
+                                    </a>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="team-card">
+                            <div class="team-card-inner">
+                                <div class="team-card-front">
+                                    <div class="team-image" style="background-image: url('ASSETS/team members/mahika.png');"></div>
+                                    <h3 class="team-name">Mahika</h3>
+                                </div>
+                                <div class="team-card-back">
+                                    <h3>DIRECTOR GENERAL</h3>
+                                    <a href="https://www.instagram.com/theantraalmun/" target="_blank">
+                                        <button class="instagram-btn">View Profile</button>
+                                    </a>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="team-card">
+                            <div class="team-card-inner">
+                                <div class="team-card-front">
+                                    <div class="team-image" style="background-image: url('ASSETS/team members/utkarsh.png');"></div>
+                                    <h3 class="team-name">Utkarsh</h3>
+                                </div>
+                                <div class="team-card-back">
+                                    <h3>DEPUTY SECRETARY GENERAL</h3>
+                                    <a href="https://www.instagram.com/theantraalmun/" target="_blank">
+                                        <button class="instagram-btn">View Profile</button>
+                                    </a>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <a href="team.html" class="view-all-btn">View All Team Members →</a>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="footer">
+        <div class="container">
+            <div class="footer-content">
+                <div class="footer-section">
+                    <h3>ANTRAL MUN</h3>
+                    <p>THE FIRST HOUR</p>
+                    <p>November 5, 2024</p>
+                </div>
+                <div class="footer-section">
+                    <h4>Quick Links</h4>
+                    <ul>
+                        <li><a href="about.html">About</a></li>
+                        <li><a href="matrix.html">Committees</a></li>
+                        <li><a href="team.html">Core Team</a></li>
+                        <li><a href="registration.html">Register</a></li>
+                    </ul>
+                </div>
+                <div class="footer-section">
+                    <h4>Committees</h4>
+                    <ul>
+                        <li>UNHRC</li>
+                        <li>UNGA</li>
+                        <li>AIPPM</li>
+                        <li>LOK SABHA</li>
+                    </ul>
+                </div>
+                <div class="footer-section">
+                    <h4>Connect</h4>
+                    <a href="https://www.instagram.com/theantraalmun/" target="_blank" class="social-link">Instagram</a>
+                    <a href="contact.html" class="social-link">Contact Us</a>
+                </div>
+            </div>
+            <div class="footer-bottom">
+                <p>&copy; 2024 ANTRAL MUN. All rights reserved.</p>
+            </div>
+        </div>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+</html>
+

@@ -1,0 +1,161 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Contact - ANTRAL MUN</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@300;400;600;700;800;900&family=Poppins:wght@300;400;600;700;800&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <!-- Navigation -->
+    <nav class="navbar">
+        <div class="nav-container">
+            <div class="logo">
+                <svg class="logo-svg" viewBox="0 0 100 120">
+                    <path d="M30 20 L30 35 L50 50 L70 35 L70 20 L30 20" fill="#d387a4"/>
+                    <path d="M50 50 L30 65 L30 80 L70 80 L70 65 L50 50" fill="#d387a4"/>
+                    <circle cx="50" cy="50" r="35" fill="none" stroke="#d387a4" stroke-width="2"/>
+                </svg>
+                <span class="logo-text">ANTRAL</span>
+            </div>
+            <ul class="nav-menu">
+                <li><a href="index.html">Home</a></li>
+                <li><a href="about.html">About</a></li>
+                <li><a href="matrix.html">Committees</a></li>
+                <li><a href="team.html">Core Team</a></li>
+                <li><a href="registration.html" class="nav-register-btn">Register</a></li>
+                <li><a href="contact.html" class="active">Contact</a></li>
+            </ul>
+            <div class="hamburger">
+                <span></span>
+                <span></span>
+                <span></span>
+            </div>
+        </div>
+    </nav>
+
+    <!-- Progress Bar -->
+    <div class="progress-bar"></div>
+
+    <!-- Hero Section -->
+    <section class="hero">
+        <div class="hero-background">
+            <div class="wave-pattern"></div>
+        </div>
+        <div class="hero-content" style="min-height: auto; padding: 8rem 0 4rem;">
+            <h1 class="hero-title" style="font-size: 4rem;">Contact Us</h1>
+            <p class="hero-subtitle">Get In Touch</p>
+        </div>
+    </section>
+
+    <!-- Contact Section -->
+    <section class="contact-section">
+        <div class="container">
+            <div class="contact-grid">
+                <div class="contact-info">
+                    <h2>We'd Love to Hear From You</h2>
+                    <p>Have questions about ANTRAL MUN? We're here to help! Reach out to us through any of the following channels.</p>
+                    
+                    <div class="contact-cards">
+                        <div class="contact-card">
+                            <div class="contact-icon">📧</div>
+                            <h3>Email</h3>
+                            <p>yadavamanjeet317@gmail.com</p>
+                        </div>
+                        <div class="contact-card">
+                            <div class="contact-icon">📱</div>
+                            <h3>Phone</h3>
+                            <p>Add phone number</p>
+                        </div>
+                        <div class="contact-card">
+                            <div class="contact-icon">📍</div>
+                            <h3>Location</h3>
+                            <p>Add event location</p>
+                        </div>
+                        <div class="contact-card">
+                            <div class="contact-icon">📸</div>
+                            <h3>Social Media</h3>
+                            <a href="https://www.instagram.com/theantraalmun/" target="_blank" style="color: #d387a4; text-decoration: none;">@theantraalmun</a>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="contact-form-container">
+                    <form id="contact-form" action="https://formsubmit.co/yadavamanjeet317@gmail.com" method="POST">
+                        <div class="form-group">
+                            <label for="contactName">Your Name *</label>
+                            <input type="text" id="contactName" name="name" required>
+                        </div>
+                        <div class="form-group">
+                            <label for="contactEmail">Your Email *</label>
+                            <input type="email" id="contactEmail" name="email" required>
+                        </div>
+                        <div class="form-group">
+                            <label for="contactSubject">Subject *</label>
+                            <input type="text" id="contactSubject" name="subject" required>
+                        </div>
+                        <div class="form-group">
+                            <label for="contactMessage">Message *</label>
+                            <textarea id="contactMessage" name="message" rows="6" required></textarea>
+                        </div>
+                        <button type="submit" class="btn-submit">Send Message</button>
+                    </form>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="footer">
+        <div class="container">
+            <div class="footer-content">
+                <div class="footer-section">
+                    <h3>ANTRAL MUN</h3>
+                    <p>THE FIRST HOUR</p>
+                    <p>November 5, 2024</p>
+                </div>
+                <div class="footer-section">
+                    <h4>Quick Links</h4>
+                    <ul>
+                        <li><a href="index.html">Home</a></li>
+                        <li><a href="about.html">About</a></li>
+                        <li><a href="matrix.html">Committees</a></li>
+                        <li><a href="team.html">Core Team</a></li>
+                        <li><a href="registration.html">Register</a></li>
+                    </ul>
+                </div>
+                <div class="footer-section">
+                    <h4>Committees</h4>
+                    <ul>
+                        <li>UNHRC</li>
+                        <li>UNGA</li>
+                        <li>AIPPM</li>
+                        <li>LOK SABHA</li>
+                    </ul>
+                </div>
+                <div class="footer-section">
+                    <h4>Connect</h4>
+                    <a href="https://www.instagram.com/theantraalmun/" target="_blank" class="social-link">Instagram</a>
+                    <a href="contact.html" class="social-link">Contact Us</a>
+                </div>
+            </div>
+            <div class="footer-bottom">
+                <p>&copy; 2024 ANTRAL MUN. All rights reserved.</p>
+            </div>
+        </div>
+    </footer>
+
+    <script src="script.js"></script>
+    <script>
+        document.getElementById('contact-form').addEventListener('submit', function(e) {
+            e.preventDefault();
+            alert('Message sent successfully! We will get back to you soon.');
+            this.submit();
+        });
+    </script>
+</body>
+</html>
+
