@@ -1,0 +1,269 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Register - ANTRAL MUN</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@300;400;600;700;800;900&family=Poppins:wght@300;400;600;700;800&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <!-- Navigation -->
+    <nav class="navbar">
+        <div class="nav-container">
+            <div class="logo">
+                <span class="logo-text">ANTRAAL</span>
+            </div>
+            <ul class="nav-menu">
+                <li><a href="index.html">Home</a></li>
+                <li><a href="about.html">About</a></li>
+                <li><a href="matrix.html">Committees</a></li>
+                <li><a href="team.html">Core Team</a></li>
+                <li><a href="registration.html" class="nav-register-btn active">Register</a></li>
+                <li><a href="contact.html">Contact</a></li>
+            </ul>
+            <div class="hamburger">
+                <span></span>
+                <span></span>
+                <span></span>
+            </div>
+        </div>
+    </nav>
+
+    <!-- Hero Section -->
+    <section class="hero">
+        <div class="hero-background">
+            <div class="wave-pattern"></div>
+        </div>
+        <div class="hero-content" style="min-height: auto; padding: 8rem 0 4rem;">
+            <h1 class="hero-title" style="font-size: 4rem;">Register Now</h1>
+            <p class="hero-subtitle">Join The First Hour</p>
+        </div>
+    </section>
+
+    <!-- Registration Form -->
+    <section class="registration-section">
+        <div class="container">
+            <!-- Progress Indicator -->
+            <div class="form-progress">
+                <div class="progress-step active" data-step="1">
+                    <span class="step-number">1</span>
+                    <span class="step-label">Personal Details</span>
+                </div>
+                <div class="progress-step" data-step="2">
+                    <span class="step-number">2</span>
+                    <span class="step-label">Committee Preferences</span>
+                </div>
+                <div class="progress-step" data-step="3">
+                    <span class="step-number">3</span>
+                    <span class="step-label">Payment</span>
+                </div>
+            </div>
+
+            <!-- Form Container -->
+            <div class="form-container">
+                <form id="registration-form" action="https://formsubmit.co/yadavamanjeet317@gmail.com" method="POST" enctype="multipart/form-data">
+                    <!-- Step 1: Personal Details -->
+                    <div class="form-step active" id="step1">
+                        <h2>Personal Details</h2>
+                        <div class="form-group">
+                            <label for="fullName">Full Name *</label>
+                            <input type="text" id="fullName" name="fullName" required>
+                        </div>
+                        <div class="form-group">
+                            <label for="email">Email Address *</label>
+                            <input type="email" id="email" name="email" required>
+                        </div>
+                        <div class="form-group">
+                            <label for="phone">Phone Number *</label>
+                            <input type="tel" id="phone" name="phone" required>
+                        </div>
+                        <div class="form-group">
+                            <label for="school">School/College *</label>
+                            <input type="text" id="school" name="school" required>
+                        </div>
+                        <div class="form-group">
+                            <label for="grade">Grade/Year *</label>
+                            <input type="text" id="grade" name="grade" required>
+                        </div>
+                        <div class="form-group">
+                            <label for="age">Age *</label>
+                            <input type="number" id="age" name="age" required>
+                        </div>
+                        <div class="form-group">
+                            <label for="city">City *</label>
+                            <input type="text" id="city" name="city" required>
+                        </div>
+                        <div class="form-group">
+                            <label for="munExperience">MUN Experience (Optional)</label>
+                            <textarea id="munExperience" name="munExperience" rows="3" placeholder="Brief description of your MUN experience"></textarea>
+                        </div>
+                        <button type="button" class="btn-next">Next →</button>
+                    </div>
+
+                    <!-- Step 2: Committee Preferences -->
+                    <div class="form-step" id="step2">
+                        <h2>Committee Preferences</h2>
+                        <p style="color: #d387a4; margin-bottom: 2rem;">Please refer to the <a href="matrix.html" style="color: #d387a4;">matrix page</a> for detailed information about committees.</p>
+
+                        <div class="form-group">
+                            <label for="preference1">Committee Preference 1 *</label>
+                            <select id="preference1" name="preference1" required>
+                                <option value="">Select Committee</option>
+                                <option value="UNHRC">UNHRC - United Nations Human Rights Council</option>
+                                <option value="UNGA">UNGA - United Nations General Assembly</option>
+                                <option value="AIPPM">AIPPM - All India Political Parties Meet</option>
+                                <option value="LOK_SABHA">LOK SABHA</option>
+                            </select>
+                        </div>
+
+                        <div class="form-group">
+                            <label for="portfolioPreference1">Portfolio Preference 1 *</label>
+                            <input type="text" id="portfolioPreference1" name="portfolioPreference1" required>
+                        </div>
+
+                        <div class="form-group">
+                            <label for="preference2">Committee Preference 2 *</label>
+                            <select id="preference2" name="preference2" required>
+                                <option value="">Select Committee</option>
+                                <option value="UNHRC">UNHRC - United Nations Human Rights Council</option>
+                                <option value="UNGA">UNGA - United Nations General Assembly</option>
+                                <option value="AIPPM">AIPPM - All India Political Parties Meet</option>
+                                <option value="LOK_SABHA">LOK SABHA</option>
+                            </select>
+                        </div>
+
+                        <div class="form-group">
+                            <label for="portfolioPreference2">Portfolio Preference 2 *</label>
+                            <input type="text" id="portfolioPreference2" name="portfolioPreference2" required>
+                        </div>
+
+                        <div style="display: flex; gap: 1rem;">
+                            <button type="button" class="btn-prev">← Previous</button>
+                            <button type="button" class="btn-next">Next →</button>
+                        </div>
+                    </div>
+
+                    <!-- Step 3: Payment -->
+                    <div class="form-step" id="step3">
+                        <h2>Payment</h2>
+                        <div class="payment-info">
+                            <div class="qr-section">
+                                <h3>Scan QR Code to Pay</h3>
+                                <div class="qr-placeholder">
+                                    <p>QR Code Placeholder</p>
+                                    <p style="font-size: 0.9rem; color: #b0b0b0;">(Add your actual QR code image here)</p>
+                                </div>
+                            </div>
+                            
+                            <div class="form-group">
+                                <label for="transactionId">Transaction ID *</label>
+                                <input type="text" id="transactionId" name="transactionId" required placeholder="Enter your transaction ID">
+                            </div>
+
+                            <div class="form-group">
+                                <label for="paymentScreenshot">Payment Screenshot *</label>
+                                <input type="file" id="paymentScreenshot" name="paymentScreenshot" accept="image/*" required>
+                            </div>
+
+                            <div class="final-info">
+                                <p><strong>Amount to be Paid:</strong> (Add amount)</p>
+                                <p><strong>Account Details:</strong> (Add account details)</p>
+                            </div>
+                        </div>
+
+                        <div style="display: flex; gap: 1rem;">
+                            <button type="button" class="btn-prev">← Previous</button>
+                            <button type="submit" class="btn-submit">Submit Registration</button>
+                        </div>
+                    </div>
+                </form>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="footer">
+        <div class="container">
+            <div class="footer-content">
+                <div class="footer-section">
+                    <h3>ANTRAL MUN</h3>
+                    <p>THE FIRST HOUR</p>
+                    <p>November 5, 2024</p>
+                </div>
+                <div class="footer-section">
+                    <h4>Quick Links</h4>
+                    <ul>
+                        <li><a href="index.html">Home</a></li>
+                        <li><a href="about.html">About</a></li>
+                        <li><a href="matrix.html">Committees</a></li>
+                        <li><a href="team.html">Core Team</a></li>
+                        <li><a href="registration.html">Register</a></li>
+                    </ul>
+                </div>
+                <div class="footer-section">
+                    <h4>Committees</h4>
+                    <ul>
+                        <li>UNHRC</li>
+                        <li>UNGA</li>
+                        <li>AIPPM</li>
+                        <li>LOK SABHA</li>
+                    </ul>
+                </div>
+                <div class="footer-section">
+                    <h4>Connect</h4>
+                    <a href="https://www.instagram.com/theantraalmun/" target="_blank" class="social-link">Instagram</a>
+                    <a href="contact.html" class="social-link">Contact Us</a>
+                </div>
+            </div>
+            <div class="footer-bottom">
+                <p>&copy; 2024 ANTRAL MUN. All rights reserved.</p>
+            </div>
+        </div>
+    </footer>
+
+    <script src="script.js"></script>
+    <script>
+        // Multi-stage form logic
+        const formSteps = document.querySelectorAll('.form-step');
+        const progressSteps = document.querySelectorAll('.progress-step');
+        let currentStep = 0;
+
+        function showStep(step) {
+            formSteps.forEach((s, i) => {
+                s.classList.toggle('active', i === step);
+            });
+            progressSteps.forEach((s, i) => {
+                s.classList.toggle('active', i <= step);
+            });
+            currentStep = step;
+        }
+
+        document.querySelectorAll('.btn-next').forEach(btn => {
+            btn.addEventListener('click', () => {
+                if (currentStep < formSteps.length - 1) {
+                    showStep(currentStep + 1);
+                }
+            });
+        });
+
+        document.querySelectorAll('.btn-prev').forEach(btn => {
+            btn.addEventListener('click', () => {
+                if (currentStep > 0) {
+                    showStep(currentStep - 1);
+                }
+            });
+        });
+
+        // Form submission
+        document.getElementById('registration-form').addEventListener('submit', function(e) {
+            e.preventDefault();
+            alert('Registration submitted successfully! We will contact you soon.');
+            this.submit();
+        });
+    </script>
+</body>
+</html>
+
